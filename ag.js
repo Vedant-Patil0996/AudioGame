@@ -51,7 +51,7 @@ const words = ['apple', 'banana', 'grape', 'orange', 'pineapple', 'mango', 'stra
                 // Add a 5-second delay before starting recognition
                 setTimeout(() => {
                     recognition.start();
-                }, 5000);
+                }, 3000);
             });
         } else {
             result.textContent = "Sorry, your browser doesn't support the Web Speech API.";
