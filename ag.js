@@ -1,6 +1,6 @@
 const wordLevel1 = ['apple', 'banana', 'grape', 'orange', 'mango', 'peach'];
 const wordLevel2=['pineapple','strawberry','blueberry','watermelon'];
-const wordLevel3=['Vedant','Saee','Vedant','Aryan','Salunkhe','Advait'];
+const wordLevel3=['Vedant','Aryan','Vedant','Saee','Advait'];
 const wordLevel4=['red','black','blue','orange'];
 const wordLevel5=['crow','cat','bird','peacock'];
         const targetWordElement = document.getElementById('targetWord');
