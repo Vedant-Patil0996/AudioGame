@@ -13,24 +13,22 @@ const wordLevel5=['crow','cat','bird','peacock'];
         let targetWord = '';
 
         function getRandomWord() {
-            if(count==1){
-            return wordLevel1[Math.floor(Math.random() * wordLevel1.length)];
+            switch (count) {
+                case 1:
+                    return wordLevel1[Math.floor(Math.random() * wordLevel1.length)];
+                case 2:
+                    return wordLevel2[Math.floor(Math.random() * wordLevel2.length)];
+                case 3:
+                    return wordLevel3[Math.floor(Math.random() * wordLevel3.length)];
+                case 4:
+                    return wordLevel4[Math.floor(Math.random() * wordLevel4.length)];
+                case 5:
+                    return wordLevel5[Math.floor(Math.random() * wordLevel5.length)];
+                default:
+                    return wordLevel1[Math.floor(Math.random() * wordLevel1.length)];
             }
-            if(count==2){
-            return wordLevel2[Math.floor(Math.random() * wordLevel2.length)];
-            }
-            if(count==3){
-                return wordLevel3[Math.floor(Math.random() * wordLength3.length)];
-            }
-            if(count==4){
-                return wordLevel4[Math.floor(Math.random() * wordLength4.length)];
-            }
-            if(count==5)
-            {
-                return wordLevel5[Math.floor(Math.random() * wordLength5.length)];
-            }
-                
         }
+        
 
         // Set a random word when the page loads
         function setNewWord() {
