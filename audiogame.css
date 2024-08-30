@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+h1 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+#targetWord {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e94e77;
+    margin: 20px 0;
+}
+#startButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#startButton:hover {
+    background-color: #357ABD;
+}
+#result, #score {
+    margin-top: 20px;
+    font-size: 20px;
+}
+#result {
+    color: #e94e77;
+}
+#score {
+    color: #4a90e2;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    #startButton {
+        padding: 12px 25px;
+    }
+}
