@@ -1,57 +1,182 @@
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
+    background: rgb(91,124,117);
+    background: radial-gradient(circle, rgba(91,124,117,1) 14%, rgba(18,172,142,1) 81%);
+    background-position: center;
     color: #333;
 }
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparency */
+    padding: 2rem;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    backdrop-filter: blur(15px); /* Glass effect */
+    max-width: 90%;
+    width: 350px;
+    margin: 0 5%;
+}
+
 h1 {
-    color: #4a90e2;
-    margin-bottom: 10px;
-}
-p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-#targetWord {
-    font-size: 36px;
-    font-weight: bold;
-    color: #e94e77;
-    margin: 20px 0;
-}
-#startButton {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #4a90e2;
+    font-size: 2rem;
     color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h2#targetWord {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 1rem 0;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 25px; /* Rounded input fields */
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: white;
+    font-size: 1.125rem;
+    box-shadow: 0 5px 15px rgba(157, 111, 218, 0.4);
     transition: background-color 0.3s ease;
 }
-#startButton:hover {
+
+button:hover {
     background-color: #357ABD;
 }
-#result, #score {
-    margin-top: 20px;
-    font-size: 20px;
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: white;
 }
+
 #result {
-    color: #e94e77;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #f8f8f8;
 }
+
 #score {
-    color: #4a90e2;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #333ee2;
     font-weight: bold;
 }
-#level{
-    margin-top: 20px;
-    font-size: 20px;
-    color:rgb(21, 167, 15);
-    font-weight:bold;
+
+#level {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #f9fcf9;
+    font-weight: bold;
 }
-@media (max-width: 600px) {
-    #startButton {
-        padding: 12px 25px;
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 2rem;
+        width: 80%;
+        max-width: 320px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2#targetWord {
+        font-size: 2.25rem;
+    }
+
+    button {
+        padding: 0.875rem;
+        font-size: 1rem;
+    }
+
+    p, #result, #score, #level {
+        font-size: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2#targetWord {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    p, #result, #score, #level {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.25rem;
+        width: 95%;
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2#targetWord {
+        font-size: 1.75rem;
+    }
+
+    button {
+        padding: 0.625rem;
+        font-size: 0.8rem;
+    }
+
+    p, #result, #score, #level {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 1rem;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2#targetWord {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    p, #result, #score, #level {
+        font-size: 0.625rem;
+    }
+}
+
