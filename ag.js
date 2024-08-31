@@ -2,7 +2,7 @@ const wordLevel1 = ['red', 'blue', 'purple', 'orange', 'peach'];
 const wordLevel2=['india','australia','germany','japan'];
 const wordLevel3=['pineapple','strawberry','blueberry','watermelon'];
 const wordLevel4=['peacock','elephant','pikachu','Neptune'];
-const wordLevel5=['Heisenberg','Minneapolis','Sagittarius','Bertolt '];
+const wordLevel5=['heisenberg','minneapolis','sagittarius','bertolt '];
 
 const targetWordElement = document.getElementById('targetWord');
 const result = document.getElementById('result');
