@@ -1,8 +1,8 @@
-const wordLevel1 = ['apple', 'banana', 'grape', 'orange', 'mango', 'peach'];
-const wordLevel2=['pineapple','strawberry','blueberry','watermelon'];
-const wordLevel3=['india','australia','germany','japan'];
-const wordLevel4=['red','black','blue','orange'];
-const wordLevel5=['crow','cat','bird','peacock'];
+const wordLevel1 = ['red', 'blue', 'purple', 'orange', 'peach'];
+const wordLevel2=['india','australia','germany','japan'];
+const wordLevel3=['pineapple','strawberry','blueberry','watermelon'];
+const wordLevel4=['peacock','elephant','pikachu','Neptune'];
+const wordLevel5=['Heisenberg','Minneapolis','Sagittarius','Bertolt '];
 
 const targetWordElement = document.getElementById('targetWord');
 const result = document.getElementById('result');
@@ -79,7 +79,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
         setNewWord();
         result.textContent = `Get ready to say the word...`;
 
-        // Add a 5-second delay before starting recognition
+        // Add a 3-second delay before starting recognition
         setTimeout(() => {
             recognition.start();
         }, 3000);
