@@ -6,8 +6,9 @@ body {
     height: 100vh;
     margin: 0;
     background: rgb(91,124,117);
-    background: radial-gradient(circle, rgba(91,124,117,1) 14%, rgba(18,172,142,1) 81%);
-    background-position: center;
+    background: rgb(122,150,154);
+    background: rgb(82,103,145);
+    background: radial-gradient(circle, rgba(82,103,145,1) 31%, rgba(18,172,142,1) 100%);    background-position: center;
     color: #333;
 }
 
@@ -179,4 +180,3 @@ p {
         font-size: 0.625rem;
     }
 }
-
