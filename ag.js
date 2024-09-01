@@ -1,4 +1,4 @@
-const wordLevel1 = ['red', 'blue', 'purple', 'orange', 'peach'];
+const wordLevel1 = ['red', 'blue', 'purple', 'orange', 'peach','black','apple'];
 const wordLevel2=['india','australia','germany','japan'];
 const wordLevel3=['pineapple','strawberry','blueberry','watermelon'];
 const wordLevel4=['peacock','elephant','pikachu','Neptune'];
